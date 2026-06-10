@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.0",
+    "zod": "^4.4.3"
+  },
+  "name": "menu-dinamico",
+  "version": "1.0.0",
+  "description": "Repostório destinado às entrevistas técnicas para os cargos de desenvolvedores e especialistas da [Base39][base39].",
+  "main": "prettier.config.js",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "prettier": "^3.8.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "5.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

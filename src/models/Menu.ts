@@ -1,0 +1,8 @@
+import { Schema, model } from 'mongoose'
+
+const MenuSchema = new Schema({
+  name: { type: String, required: true, unique: true },
+  parentId: { type: Schema.Types.ObjectId, ref: 'Menu', default: null },
+})
+
+export default model('Menu', MenuSchema)
